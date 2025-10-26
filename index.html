@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
-    
+    <div class="form-container">
+        <h1>Formulario de Registro</h1>
+        <h2><span>Realizado por: </span><i style="color: rgb(57, 176, 97);">Jairo Maigua</i></h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+                <label>Nombre completo:</label>
+                <div>
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <label>Contraseña:</label>
+                <div>
+                    <input type="password" name="clave" placeholder="Crea una contraseña" required>
+                </div>
+                <label>Correo electrónico:</label>
+                <div>
+                    <input type="email" name="correo" placeholder="usuario@correo.com" required>
+                </div>
+                <label>Edad:</label>
+                <div>
+                    <input type="number" name="edad" min="1" max="99" required>
+                </div>
+                <label>Teléfono:</label>
+                <div>
+                    <input type="tel" name="telefono" placeholder="+593" required>
+                </div>
+                <label>Página web:</label>
+                <div>
+                    <input type="url" name="pagina" placeholder="https://tusitio.com" required>
+                </div>
+                <label>Fecha de nacimiento:</label>
+                <div>
+                    <input type="date" name="fecha_nac" placeholder="dd/mm/aaaa" required>
+                </div>
+                <label>Hora de cita:</label>
+                <div>
+                    <input type="time" name="hora_cita" placeholder="--:--" required>
+                </div>
+                <label>Fecha y hora del evento:</label>
+                <div>
+                    <input type="datetime-local" name="evento" placeholder="dd/mm/aaaa --:--">
+                </div>
+                <label>Mes de pago:</label>
+                <div>
+                    <input type="month" name="mes_pago" required>
+                </div>
+                <label>Semana actual:</label>
+                <div>
+                    <input type="week" name="semana" required>
+                </div>
+                <label>Color favorito:</label>
+                <div>
+                    <input type="color" name="color_fav" required>
+                </div>
+                <label>Nivel de satisfacción:</label>
+                <div>
+                    <input type="range" name="nivel" min="0" max="10" required>
+                </div>
+                <label>Género:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="genero" value="M">Masculino</label>
+                    <label><input type="radio" name="genero" value="F">Femenino</label>
+                </div>
+
+                <label>Intereses:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="Intereses" value="tecnología">Tecnología</label>
+                    <label><input type="checkbox" name="Intereses" value="deporte">Deporte</label>
+                    <label><input type="checkbox" name="Intereses" value="arte">Arte</label>
+                </div>
+                <label>Subir archivo:</label>
+                <input type="file" name="foto">
+                <input type="hidden" name="id" value="001">
+
+                <div class="buttons">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>
